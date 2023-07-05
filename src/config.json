@@ -1,7 +1,7 @@
 {
     "tileConfig": {
         "xOffset": 50,
-        "yOffset": 0,
+        "yOffset": 50,
         "gutterWidth": 60,
         "tileAreaSize": 980
     }
