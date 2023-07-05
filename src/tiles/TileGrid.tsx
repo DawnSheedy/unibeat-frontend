@@ -24,7 +24,7 @@ export const TileGrid = () => {
         height: config.tileConfig.tileAreaSize,
         width: config.tileConfig.tileAreaSize,
         left: config.tileConfig.xOffset,
-        right: config.tileConfig.yOffset,
+        top: config.tileConfig.yOffset,
         gap: config.tileConfig.gutterWidth,
       }}
     >
