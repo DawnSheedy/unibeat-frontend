@@ -4,7 +4,7 @@ import { TileComponentProps } from "../../types/TileComponentProps";
 import "./AttractTile.scss";
 
 export const AttractTile = ({ isLeaving, coords }: TileComponentProps) => {
-  const animDelay = useAnimationDelayForCoords(coords, 450);
+  const animDelay = useAnimationDelayForCoords(coords, 900);
   const normalAnimDelay = useAnimationDelayForCoords(coords);
   return (
     <div
