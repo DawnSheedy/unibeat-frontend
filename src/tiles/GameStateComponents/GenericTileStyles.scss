@@ -1,0 +1,50 @@
+.generic-tile-container {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+
+    &.hide {
+        opacity: 0;
+    }
+}
+
+.soft-enter {
+    opacity: 0;
+    animation: soft-enter;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes soft-enter {
+    0% {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.soft-exit {
+    opacity: 1;
+    animation: soft-exit;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes soft-exit {
+    0% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+}

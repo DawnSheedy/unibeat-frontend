@@ -1,0 +1,35 @@
+.attract-tile {
+  position: relative;
+  background-color: rgb(67, 0, 192);
+  opacity: 0;
+  width: 200%;
+  rotate: 45deg;
+  height: 200%;
+  animation-name: attract;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+
+  &::before {
+    position: absolute;
+    content: "asdfasdf";
+    height: 100%;
+    width: 50%;
+    z-index: 200;
+    background-color: rgb(192, 0, 150);
+  }
+}
+
+@keyframes attract {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
