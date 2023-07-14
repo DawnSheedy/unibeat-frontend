@@ -28,7 +28,7 @@ export const Main = () => {
   });
 
   return (
-    <div>
+    <div className="app-container">
       <div className="marquee-container">
         <Marquee />
       </div>

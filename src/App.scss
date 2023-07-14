@@ -1,8 +1,19 @@
+.app-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1080px;
+    height: 1920px;
+
+    background-color: black;
+}
+
 .marquee-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
+    max-width: 1080px;
     height: 700px;
     overflow: hidden;
 
